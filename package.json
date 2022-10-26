@@ -1,0 +1,32 @@
+{
+  "name": "gen-swagger-client",
+  "version": "1.0.1",
+  "description": "Generate javscript client from swagger file",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nyc mocha './test/swagger.js'"
+  },
+  "keywords": [
+    "swagger",
+    "middleware"
+  ],
+  "author": "aeternity",
+  "license": "ISC",
+  "dependencies": {
+    "@aeternity/json-bigint": "^0.3.1",
+    "bignumber": "^1.1.0",
+    "cross-fetch": "^3.1.5",
+    "swagger-client": "^3.18.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.26.0",
+    "http": "^0.0.1-security",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
