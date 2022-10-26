@@ -2,9 +2,11 @@
   "name": "gen-swagger-client",
   "version": "1.0.1",
   "description": "Generate javscript client from swagger file",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "build": "webpack",
+    "prepare": "npm run build",
     "test": "nyc mocha './test/swagger.js'"
   },
   "keywords": [
@@ -20,13 +22,17 @@
     "swagger-client": "^3.18.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^8.2.5",
     "chai": "^4.3.6",
     "eslint": "^8.26.0",
+    "eslint-plugin-vue": "^9.6.0",
     "http": "^0.0.1-security",
     "mocha": "^10.1.0",
     "nyc": "^15.1.0",
     "sinon": "^14.0.1",
-    "webpack": "^5.68.0",
+    "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
 }
